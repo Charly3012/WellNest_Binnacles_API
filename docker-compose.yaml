@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+    wellnest_api:
+        image: wellnest_binnacle_api
+        container_name: wellnestPHP
+        ports:
+            - '3001:80'
+        environment:
+            - SERVER=140.84.187.91
+            - USER_WELLNEST=wellnest
+            - CONTRASENA_WELLNEST=WellNest123
+            - DATABASE=wellnest
